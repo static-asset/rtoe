@@ -1,6 +1,7 @@
 div#property-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .property-container {
@@ -15,4 +16,30 @@ div#property-wrapper {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.property-information {
+    text-decoration: none;
+    color: black;
+}
+
+span.property-price {
+    font-size: 22px;
+}
+
+span.property-details {
+    float: right;
+    margin-top: 6px;
+}
+
+span.property-locaiton {
+    color: black;
+    width: 100%;
+    text-align: left;
+    display: block;
+    line-height: 1;
+}
+
+a:hover {
+    text-decoration: none !important;
 }
