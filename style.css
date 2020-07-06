@@ -43,3 +43,17 @@ span.property-locaiton {
 a:hover {
     text-decoration: none !important;
 }
+
+.top-heading {
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    background: #dce8f3;
+}
+
+h1.heading {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
