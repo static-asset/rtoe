@@ -1,18 +1,35 @@
+.property-wrapper {
+    padding-bottom: 100px;
+}
 div#property-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
 }
 
 .property-container {
     min-width: 250px;
     flex: 0 1 250px;
-    margin: 10px;
+    max-height: 150px;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+}
+
+.property-container a {
+    width: 100%;
+    height: 100%;
+}
+
+.property-image-wrapper {
+    display: flex;
+    height: 128px;
 }
 
 .property-image-container {
-    width: 100%;
-    height: 250px;
+    width: 200px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,39 +38,51 @@ div#property-wrapper {
 .property-information {
     text-decoration: none;
     color: black;
+    margin-left: 15px;
+    height: fit-content;
+    vertical-align: middle;
+    display: block;
+    width: -webkit-fill-available;
+}
+
+.property-information-top {
+    padding-bottom: 6px;
+}
+
+.property-information-middle {
+    padding-bottom: 6px;
+}
+
+.property-information-bottom {
+    text-align: right;
 }
 
 span.property-price {
     font-size: 22px;
+    float: right;
 }
 
 span.property-details {
-    float: right;
     margin-top: 6px;
+    display: block;
 }
 
-span.property-locaiton {
-    color: black;
-    width: 100%;
-    text-align: left;
-    display: block;
-    line-height: 1;
+span.property-location {
+    margin-top: 5px;
+    display: inline-block;
+}
+
+button.detail-button {
+    background: #f58904;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px #b36404;
+    right: 2px;
+    position: relative;
 }
 
 a:hover {
     text-decoration: none !important;
-}
-
-.top-heading {
-    width: 100%;
-    display: block;
-    padding: 20px 0;
-    background: #dce8f3;
-}
-
-h1.heading {
-    display: block;
-    margin: auto;
-    width: fit-content;
-    text-align: center;
 }
